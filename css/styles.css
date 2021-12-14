@@ -295,7 +295,6 @@ address {
   color: var(--primary-white-color);
   background-color: var(--theme-color);
 }
-
 /*Content*/
 .content {
   display: flex;
