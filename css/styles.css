@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -103,7 +103,7 @@ address {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .button {
   display: inline-block;
@@ -167,7 +167,8 @@ address {
 /*Hero*/
 .hero {
   text-align: center;
-  background-color: var(--secondary-color);
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -178,14 +179,12 @@ address {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  padding-top: 200px;
 }
 .hero-button {
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 136px;
-  margin-bottom: 200px;
 
   font-family: var(--primary-font);
   color: var(--primary-white-color);
@@ -228,9 +227,12 @@ address {
   display: flex;
   justify-content: space-between;
 }
-.section.team {
-  background-color: var(--another-color);
+.team-liders {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
+
 .item {
   color: var(--text-primary);
   font-weight: 500;
@@ -259,7 +261,14 @@ address {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.address-link:last-child {
+  margin-bottom: 0;
+}
+.data {
+  margin-bottom: 9px;
 }
 .address-link:hover,
 .address-link:focus {
@@ -296,17 +305,23 @@ address {
   background-color: var(--theme-color);
 }
 /*Content*/
+.description {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .content .item {
+  margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
-.content .item:nth-last-child(-n + 3) {
+.content .item:nth-child(3n + 3) {
   margin-bottom: 0;
+  margin-right: 0;
 }
 .content-title {
   color: var(--text-primary);
