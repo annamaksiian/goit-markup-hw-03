@@ -14,7 +14,6 @@
 
 body {
   font-family: var(--primary-font), sans-serif;
-  background-color: var(--primary-color);
   letter-spacing: 0.03em;
   font-style: normal;
 }
@@ -39,10 +38,13 @@ body {
 }
 .section.no-padding {
   padding-bottom: 0;
-  padding-top: 0;
 }
 
 /*Общие*/
+img {
+  display: block;
+}
+
 ul,
 ol {
   list-style: none;
@@ -56,13 +58,14 @@ p {
 a {
   text-decoration: none;
 }
-address {
+.location .geolocation {
   font-style: normal;
   color: var(--primary-white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  margin-bottom: 9px;
 }
 .caption {
   color: var(--text-primary);
@@ -82,7 +85,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   color: var(--text-primary);
@@ -247,32 +250,39 @@ address {
   line-height: 1.18;
 }
 /** FOOTER**/
+
 .footer {
   background-color: var(--secondary-color);
   font-family: var(--primary-font), sans-serif;
   font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
+  list-style-type: none;
 }
-
-.address-link {
+.container a {
+  display: block;
+}
+.mail a,
+.tel a {
+  font-family: var(--primary-font);
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-  margin-bottom: 9px;
 }
 
-.address-link:last-child {
-  margin-bottom: 0;
+.link:hover,
+.link:focus {
+  color: var(--theme-color);
 }
-.data {
+
+.address .link {
   margin-bottom: 9px;
 }
-.address-link:hover,
-.address-link:focus {
-  color: var(--theme-color);
+.tel .link {
+  margin-bottom: 0;
 }
 
 /*Стили для Портфолио*/
@@ -315,7 +325,9 @@ address {
   display: flex;
   flex-wrap: wrap;
 }
+
 .content .item {
+  display: block;
   margin-right: 30px;
   margin-bottom: 30px;
 }
